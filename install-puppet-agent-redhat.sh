@@ -36,4 +36,4 @@ yum clean all
 yum install puppet -y
 
 # Add puppet master to hostsfile
-puppet apply -e "host { 'puppet': ip => '149.210.176.197', host_aliases => 'puppet'}"
+puppet apply -e "host { 'puppet.lwservice.nl': ip => '149.210.176.197', host_aliases => 'puppet'}"
