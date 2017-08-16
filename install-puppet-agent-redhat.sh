@@ -14,7 +14,7 @@ else
 fi
 
 # Get CentOS version
-VERSION = `cat /etc/redhat-release | awk '{print substr($4, 0, 1)}'`;
+VERSION=`cat /etc/redhat-release | awk '{print substr($4, 0, 1)}'`
 
 # Get and present the option to change hostname 
 echo "Current hostname is set to `hostnamectl status --static`."
