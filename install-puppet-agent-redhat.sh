@@ -31,7 +31,7 @@ else
 fi
 
 # Install puppet
-rpm -ivh https://yum.puppetlabs.com/puppetlabs-release-el-${VERSION}.noarch.rpm
+rpm -ivh https://yum.puppetlabs.com/puppet5/puppet5-release-el-${VERSION}.noarch.rpm
 yum clean all
 yum install puppet -y
 
