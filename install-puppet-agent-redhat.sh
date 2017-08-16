@@ -35,5 +35,8 @@ rpm -ivh https://yum.puppetlabs.com/puppet5/puppet5-release-el-${VERSION}.noarch
 yum clean all
 yum install puppet -y
 
+# Create symlink. Puppet install fails to do this itself
+ln -s /opt/puppetlabs/puppet/bin/puppet /usr/local/bin/puppet
+
 # Add puppet master to hostsfile
 puppet apply -e "host { 'puppet.lwservice.nl': ip => '149.210.176.197', host_aliases => 'puppet'}"
